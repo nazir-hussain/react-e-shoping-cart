@@ -13,10 +13,10 @@ section{
 }
 
 .cards{
-    width: 250px;
+    width: 200px;
     height: 300px;
-    padding: 20px;
-    border: 2px solid skyblue;
+    padding: 10px;
+    /* border: 2px solid skyblue; */
     border-radius: 14px;
     margin-bottom: 20px;
 }
@@ -27,10 +27,9 @@ section{
 }
 
 .image_box img{
-    width: 200px;
+    width: 190px;
     height: 200px;
-    /* border: 1px solid black; */
-    margin-left: 24px;
+    border: 1px solid black;
 }
 
 .image_box img:hover{
@@ -45,6 +44,12 @@ section{
 .details p:nth-child(2){
     color: gray;
     font-size: 0.8rem;
+    font-weight: 500;
+}
+.details p:nth-child(3){
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .details p:nth-child(4){
