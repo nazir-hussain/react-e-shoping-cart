@@ -1,20 +1,22 @@
-import React from 'react';
-import '../styles/Navbar.css';
+import React from "react";
+import "../styles/Navbar.css";
 
-const Navbar =()=> {
+const Navbar = ({ setShow, size }) => {
   return (
     <nav>
-        <div className="nav_box">
-            <span className="my_shop">My Shoping Cart</span>
-            <div className="cart">
-                <span>
-                    <i class="fas fa-cart-plus"></i>
-                </span>
-                <span>1</span>
-            </div>
+      <div className="nav_box">
+        <span className="my_shop" onClick={() => setShow(true)}>
+          My Shoping
+        </span>
+        <div className="cart" onClick={() => setShow(false)}>
+          <span>
+            <i className="fas fa-cart-plus"></i>
+          </span>
+          <span>{size}</span>
         </div>
+      </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

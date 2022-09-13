@@ -1,15 +1,9 @@
-import React, { useState } from 'react'
 import list from '../Data'
 import Card from './Card'
 import '../styles/Shop.css'
 
-const Shop =()=> {
+const Shop =({handleClick})=> {
   
-  const [cart, setcart] = useState([]);
-
-  const handleClick= (item) =>{
-    cart.push(item);
-  }
 
   return (
     <section>
